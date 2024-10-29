@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cal{
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    padding-top: 14vh;
+    position: relative;
+    flex-direction: column;
+}
+.result{
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    color: white;
+    position: absolute;
+    background-color: rgb(125, 182, 97);
+    min-height: 9vh;
+    padding: 10px;
+    width: 87%;
+    border: 1px solid rgba(255, 255, 255, 0.484);
+    top:1.5vh;
+    font-size: 2.3rem;
+}
+.row1 {
+    display: flex;
+    font-size: 2.3rem;
+    color: white;
+}
+
+
+.row1 button {
+    background-color: rgb(68, 65, 65);
+    justify-content: center;
+    align-items: center;
+    height: 4.5rem;
+    width: 4.5rem;
+    transition: 0.2s ease-in-out;
+    display: flex;
+    border: 1px solid rgba(255, 255, 255, 0.19);
+    color: rgb(238, 238, 238);
+    font-size: 2rem;
+}
+button.AC,button.mod,button.Del{
+    background-color: rgb(138, 138, 138);
+    font-size: 2.1rem;
+    color: black;
+}
+
+.row1 button:hover {
+    transform: scale(1.1);
+    cursor: pointer; 
+}
+
+.row1 > .zero {
+    width: 9rem; 
+}
+
+.row1 button.sub,
+.row1 button.add,
+.row1 button.multi,
+.row1 button.equal,
+.row1 button.divide {
+    background-color: #8502ff;
+}

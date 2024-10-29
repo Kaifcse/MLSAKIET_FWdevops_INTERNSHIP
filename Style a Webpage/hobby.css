@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+    width: 100%;
+    height: 10vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    font-size: larger;
+}
+.burger{
+    position:absolute;
+    left: 5%;
+    top: 4vh;
+    z-index: 10;
+    color: white;
+}
+.nav{
+    width: 60%;
+    color: white;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+li{
+    list-style: none;
+}
+main{
+    background-color: gray;
+    h2{
+        display: flex;
+        justify-content: center;
+        padding-top: 20px;
+        padding-bottom: 25px;
+    }
+    h3{
+        font-size: x-large;
+    }
+}
+.game,.web,.music{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .img1{
+       padding-left: 3vw;
+        width: 35%;
+    }
+    img{
+        height: 35vh;
+        border-radius: 5px;
+        width: 370px;
+        
+    }
+    p{
+        width:276px;
+    }
+    .web1,.game1,.music1{
+        width: 70%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+@media only screen and (max-width:1000px) {
+    .game,.web,.music{
+        display: flex;
+        justify-content: space-between;
+        h3{
+            padding-top:15px;
+            padding-bottom: 15px;
+        }
+        .img1{
+            width: 50%;
+        }
+        .web1,.game1,.music1{
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            }
+    }
+}
+@media only screen and (max-width:730px) {
+    .game,.web,.music{
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px;
+        .img1{
+            display: flex;
+            justify-content: center;
+        }
+        h3{
+            padding: 15px;
+        }
+    }
+}
+.hid{
+    color: white;
+    position:absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(46, 45, 45);
+    display: flex;
+    flex-direction: column;
+    height: 45vh;
+    justify-content: space-around;
+    align-items: center;
+    width: 15vw;
+    display: none;
+    ul{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 10vh;
+    }
+}
